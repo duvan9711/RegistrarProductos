@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">RegistrarProductos</string>
+    <string name="titulo">Registrar Producto</string>
+    <string name="Name">Nombre producto</string>
+    <string name="Cantidad">Cantidad producto</string>
+    <string name="Precio">Precio producto</string>
+    <string name="Name1">Nombre</string>
+    <string name="Cantidad1">Cantidad</string>
+    <string name="Precio1">Precio</string>
+    <string name="valor">Valor</string>
+    <string name="btn">Añadir</string>
+    <string name="btn1">Finaliza compra</string>
+</resources>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="25dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="italic"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="#169AAC"
+                android:layout_marginTop="15dp"
+                app:startIconDrawable="@drawable/lapiz">
+
+                <EditText
+                    android:id="@+id/nombrePro"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/Name"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    tools:ignore="TextContrastCheck" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="#169AAC"
+                android:layout_marginTop="15dp"
+                app:startIconDrawable="@drawable/cantidad">
+
+                <EditText
+                    android:id="@+id/cantPro"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/Cantidad"
+                    android:importantForAutofill="no"
+                    android:inputType="numberDecimal"
+                    tools:ignore="TextContrastCheck"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="#169AAC"
+                android:layout_marginTop="15dp"
+                app:startIconDrawable="@drawable/precio">
+
+                <EditText
+                    android:id="@+id/precioPro"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/Precio"
+                    android:importantForAutofill="no"
+                    android:inputType="numberDecimal"
+                    android:textColorHint="#8D6E63"
+                    tools:ignore="TextContrastCheck" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/btn"
+                android:textSize="24sp"
+                android:backgroundTint="#169AAC"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TableLayout
+                android:id="@+id/table1"
+                android:layout_width="match_parent"
+                android:layout_height="279dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="UselessParent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="22dp"
+                        android:text="@string/Name1"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="22dp"
+                        android:text="@string/Cantidad1"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="22dp"
+                        android:text="@string/Precio1"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/valor"
+                        android:textSize="20sp" />
+                </TableRow>
+
+            </TableLayout>
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/btn1"
+                android:textSize="24sp"
+                android:backgroundTint="#169AAC"/>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>
